@@ -31,11 +31,11 @@ function divide () {
       var integer = Math.floor(num1/num2)
       var fraction = num1%num2
     }
-    else {
-      answer = integer.toString() + " " + fraction.toString() + "/" + num2
-      document.getElementById('result').innerHTML=answer;
-    }
     result = num1 + " / " + num2;
+  }
+  else {
+    answer = integer.toString() + " " + fraction.toString() + "/" + num2
+    document.getElementById('result').innerHTML=answer;
   }
   document.getElementById('result').innerHTML=result;
   num1 = 0
