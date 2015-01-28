@@ -1,0 +1,97 @@
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.2/paper/bootstrap.min.css">
+	<style type="text/css">
+	body {
+		background-color: #7FFFD4
+	}
+	button {
+		padding: -5px;
+		margin: -5px;
+		border:-5px;
+	}
+	</style>
+	<script>
+	var num1 = 0;
+	var num2 = 0;
+	function click1 (e) {
+		num1 = parseInt(e.target.innerHTML);
+	}
+	function click2 (e) {
+		num2 = parseInt(e.target.innerHTML);
+	}
+	function add () {
+		var result = num1+num2;
+        document.getElementById('result').innerHTML=result;
+        num1 = 0
+        num2 = 0
+	}
+	function subtract () {
+		var result = num1-num2;
+        document.getElementById('result').innerHTML=result;
+        num1 = 0
+        num2 = 0
+	}
+	function multiply () {
+		var result = num1*num2;
+        document.getElementById('result').innerHTML=result;
+        num1 = 0
+        num2 = 0
+	}
+function divide () {
+        var result = num1/num2;
+        if (num1%num2 !== 0) {
+        	if (num1 < num2) {
+        		var integer = Math.floor(num1/num2)
+        		var fraction = num1%num2
+        		answer = integer.toString() + " " + fraction.toString() + "/" + num2
+        	}
+        	result = num1 + " / " + num2;
+        }
+        document.getElementById('result').innerHTML=result;
+        num1 = 0
+        num2 = 0
+    }
+	function home() {
+		location.href='../index.html'
+	}
+	</script>
+</head>
+<body>
+<div class="container-fluid">
+<h4>1. First number</h4>
+<button onclick="click1(event)" class="btn btn-info">1</button>
+<button onclick="click1(event)" class="btn btn-info">2</button>
+<button onclick="click1(event)" class="btn btn-info">3</button>
+<button onclick="click1(event)" class="btn btn-info">4</button>
+<button onclick="click1(event)" class="btn btn-info">5</button>
+<button onclick="click1(event)" class="btn btn-info">6</button>
+<button onclick="click1(event)" class="btn btn-info">7</button>
+<button onclick="click1(event)" class="btn btn-info">8</button>
+<button onclick="click1(event)" class="btn btn-info">9</button>
+<button onclick="click1(event)" class="btn btn-info">10</button>
+<br>
+<h4>2. Second number</h4>
+<button onclick="click2(event)" class="btn btn-info">1</button>
+<button onclick="click2(event)" class="btn btn-info">2</button>
+<button onclick="click2(event)" class="btn btn-info">3</button>
+<button onclick="click2(event)" class="btn btn-info">4</button>
+<button onclick="click2(event)" class="btn btn-info">5</button>
+<button onclick="click2(event)" class="btn btn-info">6</button>
+<button onclick="click2(event)" class="btn btn-info">7</button>
+<button onclick="click2(event)" class="btn btn-info">8</button>
+<button onclick="click2(event)" class="btn btn-info">9</button>
+<button onclick="click1(event)" class="btn btn-info">10</button>
+<br>
+<h4>3. Select operator</h4>
+<button onclick="add(event)" class="btn btn-success" id="margin">Add</button>
+<button onclick="subtract(event)" class="btn btn-success">Subtract</button>
+<button onclick="multiply(event)" class="btn btn-success">Multiply</button>
+<button onclick="divide(event)" class="btn btn-success">Divide</button>
+<br>
+</div>
+<button onclick="home()" class="btn btn-primary" style="margin-top:25px">Back to main page</button>
+<h1 id="result"></h1>
+</body>
+</html>
