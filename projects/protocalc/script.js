@@ -30,11 +30,17 @@ function divide () {
     if (num1 < num2) {
       var integer = Math.floor(num1/num2)
       var fraction = num1%num2
+    }
+    else {
       answer = integer.toString() + " " + fraction.toString() + "/" + num2
+      document.getElementById('result').innerHTML=answer;
     }
     result = num1 + " / " + num2;
   }
   document.getElementById('result').innerHTML=result;
   num1 = 0
   num2 = 0
+}
+function home() {
+  location.href='../index.html'
 }
