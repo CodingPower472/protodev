@@ -43,9 +43,9 @@ function divide () {
         var result = num1/num2;
         if (num1%num2 !== 0) {
         	if (num1 > num2) {
-			console.log('Activated!')
         		var integer = Math.floor(num1/num2)
         		var fraction = num1%num2
+			console.log(fraction)
         		result = integer.toString() + " " + fraction.toString() + "/" + num2
         	}
         	result = num1 + " / " + num2;
@@ -72,6 +72,7 @@ function divide () {
 <button onclick="click1(event)" class="btn btn-info">8</button>
 <button onclick="click1(event)" class="btn btn-info">9</button>
 <button onclick="click1(event)" class="btn btn-info">10</button>
+<button onclick="click1(event)" class="btn btn-info">11</button>
 <br>
 <h4>2. Second number</h4>
 <button onclick="click2(event)" class="btn btn-info">1</button>
@@ -84,6 +85,7 @@ function divide () {
 <button onclick="click2(event)" class="btn btn-info">8</button>
 <button onclick="click2(event)" class="btn btn-info">9</button>
 <button onclick="click1(event)" class="btn btn-info">10</button>
+<button onclick="click1(event)" class="btn btn-info">11</button>
 <br>
 <h4>3. Select operator</h4>
 <button onclick="add(event)" class="btn btn-success" id="margin">Add</button>
