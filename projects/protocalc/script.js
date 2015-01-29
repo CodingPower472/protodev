@@ -26,18 +26,19 @@ function multiply () {
 }
 function divide () {
   var result = num1/num2;
+  document.getElementById('result').innerHTML=answer;
   if (num1%num2 !== 0) {
     if (num1 < num2) {
       var integer = Math.floor(num1/num2)
       var fraction = num1%num2
     }
     result = num1 + " / " + num2;
+    document.getElementById('result').innerHTML=result;
   }
   else {
     answer = integer.toString() + " " + fraction.toString() + "/" + num2
     document.getElementById('result').innerHTML=answer;
   }
-  document.getElementById('result').innerHTML=result;
   num1 = 0
   num2 = 0
 }
