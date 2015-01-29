@@ -26,19 +26,10 @@ function multiply () {
 }
 function divide () {
   var result = num1/num2;
-  if (num1%num2 !== 0) {
-    if (num1 > num2) {
-      var integer = Math.floor(num1/num2)
-      var fraction = num1%num2 + "/ " + num2
-      var result = integer.toString() + " and " + fraction.toString()
-      document.getElementById('result').innerHTML= num1 + " / " + num2 + " = " + result;
-      console.log("Result is" + result)
-    }
-    else {
-  var  result = num1 + " / " + num2;
-    }
+  document.getElementById('result').innerHTML=result;
+  num1 = 0
+  num2 = 0
   }
-}
 function square() {
   if (num1 > 0) {
     var result = num1*num1
