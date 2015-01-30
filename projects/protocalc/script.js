@@ -2,9 +2,11 @@ var num1 = 0;
 var num2 = 0;
 function click1 (e) {
   num1 = parseInt(e.target.innerHTML);
+  document.getElementById('num1').innerHTML=num1
 }
 function click2 (e) {
   num2 = parseInt(e.target.innerHTML);
+  document.getElementById('num2').innerHTML=num1
 }
 function add () {
   var result = num1+num2;
@@ -41,7 +43,7 @@ function divide () {
 }
 function square() {
   if (num1 > 0) {
-    var result = num1*num1
+    var result = num1 + " squared is " + num1*num1
     document.getElementById('result').innerHTML=result;
     num1 = 0
     num2 = 0
