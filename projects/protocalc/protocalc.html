@@ -12,24 +12,28 @@
 		border:-5px;
 	}
 	#
-	
+
 	</style>
 	<script>
+	var arr1 = []
+	var arr2 = []
 	var num1 = 0;
 	var num2 = 0;
 	function click1 (e) {
-		num1 = parseInt(e.target.innerHTML);
+		 num1 = arr1.push(e.target.innerHTML)
 	}
 	function click2 (e) {
-		num2 = parseInt(e.target.innerHTML);
+		 num2 = arr2.push(e.target.innerHTML)
 	}
 	function add () {
+		parseInt(num1)
 		var result = num1+num2;
         document.getElementById('result').innerHTML= num1 + " + " + num2 + " = " + result;
         num1 = 0
         num2 = 0
 	}
 	function subtract () {
+		parseInt(num2)
 		var result = num1-num2;
         document.getElementById('result').innerHTML= num1 + " - " + num2 + " = " + result;
         num1 = 0
@@ -68,7 +72,7 @@
 	document.getElementById('result').innerHTML=result;
 	num1 = 0
 	num2 = 0
-}	
+}
 }
 	function xy() {
 	var result = math.power(num1, num2)
@@ -80,7 +84,7 @@
 		location.href='../index.html'
 	}
 	</script>
-</head>
+</head>.
 <body>
 <div class="container-fluid">
 <h4>1. First number</h4>
