@@ -1,3 +1,12 @@
-a {
-  font-size:48px;
+#calculator {
+    margin-top:50px;
+    margin-left:50px;
+}
+
+#output {
+    width:100px;
+    border:1px black solid;
+    padding:5px;
+    height:1em;
+    text-align: right;
 }

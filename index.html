@@ -1,26 +1,41 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <!-- Bootstrap cdn, paper theme -->
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.2/paper/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="style.css">
- <title>Welcome to ProtoDevs!</title>
- </head>
- <body>
-   <div class="container-fluid">
-   <div class="jumbotron">
-   <h1>Protogon</h1>
-   <p>Card game by Protodev</p>
-   <a href="projects/protogon/protogon.html">Protogon page</a>
-   <br>
-   <a href="https://bitbucket.org/CodingPower472/protogon-protodev">Bitbucket page for Protogon</a>
-   </div>
-   <div class="jumbotron">
-      <h1>Protocalc</h1>
-      <p>Calculator by Protodev</p>
-      <a href="projects/protocalc/protocalc.html">Protocalc page</a>
-      <br>
-      <a href="https://bitbucket.org/protodev/protocalc">Bitbucket page for Protocalc</a>
-   </div>
- </div>
- </body>
- </html>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="calculator">
+      <div id="output">
+      </div>
+      <div class="row">
+          <button class="num" id="one" value="1">1</button>
+          <button class="num" id="two" value="2">2</button>
+          <button class="num" id="three" value="3">3</button>
+          <button class="operator" id="plus" value="+">+</button>
+      </div>
+       <div class="row">
+          <button class="num" id="four" value="4">4</button>
+          <button class="num" id="five" value="5">5</button>
+          <button class="num" id="six" value="6">6</button>
+          <button class="operator" id="minus" value="-">-</button>
+      </div>
+       <div class="row">
+          <button class="num"  id="seven" value="7">7</button>
+          <button class="num"  id="eight" value="8">8</button>
+          <button class="num"  id="nine" value="9">9</button>
+          <button class="operator" id="times" value="*">x</button>
+      </div>
+      <div class="row">
+          <button id="clear">C</button>
+          <button class="num" id="zero" value="0">0</button>
+          <button id="decimal" value=".">.</button>
+          <button class="operator" id="divide" value="/">/</button>
+      </div>
+      <button id="equals">=</button>
+  </div>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
